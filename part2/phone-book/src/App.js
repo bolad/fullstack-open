@@ -60,6 +60,10 @@ const App = () => {
           setNewNumber('')
           setNotification('Contact successfully added to phonebook')
         })
+        .catch(error => {
+          console.log(error.response.data);
+          setErrorMessage(error.response.message)
+        })
         handleNotifications();
       }
     }

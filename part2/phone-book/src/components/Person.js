@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const Person = ({person, removePerson}) => (
     <div className="contact">
         {person.name} {person.number} {' '}
